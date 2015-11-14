@@ -38,7 +38,6 @@ def check_type(line):
     current_type = None
     output_file = open(remove_extension_form_file_name(file.name) + ".bedGraph", "w")
     output_file.write(new_track_line + "\n")
-    # okreslenie czy fixedStep, czy variableStep
     for line in file:
         actual_line = line.split()
         if actual_line[0] == "fixedStep":
